@@ -1,12 +1,12 @@
-# ng-inline-svg-2
+# @doughlass/ng-inline-svg
+
+Inline SVG for Angular 15>
 
 ---
 
-[![NPM](https://nodei.co/npm/ng-inline-svg-2.png?compact=true)](https://nodei.co/npm/ng-inline-svg-2)
+[![NPM](https://nodei.co/npm/@doughlass/ng-inline-svg.png?compact=true)](https://nodei.co/npm/doughlass/ng-inline-svg)
 
-**[Demo](https://echeung.me/ng-inline-svg)**
-
-*Formerly called [ng-inline-svg](https://github.com/arkon/ng-inline-svg)*
+*Formerly called [ng-inline-svg](https://github.com/arkon/ng-inline-svg)* & *[ng-inline-svg-2](https://github.com/siandreev/ng-inline-svg)*
 
 Angular directive for inserting an SVG inline within an element, allowing for easily styling
 with CSS like `fill: currentColor;`.
@@ -19,7 +19,7 @@ font icons.
 ## Installation
 
 ```shell
-npm install --save ng-inline-svg-2
+npm install --save @doughlass/ng-inline-svg
 ```
 
 
@@ -29,7 +29,7 @@ Add `HttpClientModule` and `InlineSVGModule` to your list of module imports:
 
 ```typescript
 import { HttpClientModule } from '@angular/common/http';
-import { InlineSVGModule } from 'ng-inline-svg-2';
+import { InlineSVGModule } from '@doughlass/ng-inline-svg';
 
 @NgModule({
   declarations: [AppComponent],
@@ -94,7 +94,7 @@ Here is one way to achieve this dynamically by adding an app initalizing service
 *app-server.module.ts*:
 ```typescript
 import { NgModule, APP_INITIALIZER } from '@angular/core';
-import { InlineSVGConfig } from 'ng-inline-svg-2';
+import { InlineSVGConfig } from '@doughlass/ng-inline-svg';
 import { SVGConfig } from './svg-config';
 
 @NgModule({
@@ -108,7 +108,7 @@ export class AppServerModule {}
 *svg-config.ts*:
 ```typescript
 import { Injectable, Inject } from '@angular/core';
-import { InlineSVGConfig } from 'ng-inline-svg-2';
+import { InlineSVGConfig } from '@doughlass/ng-inline-svg';
 
 @Injectable()
 export class SVGConfig extends InlineSVGConfig {
